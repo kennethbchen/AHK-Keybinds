@@ -25,8 +25,8 @@ CapsLock & a::Home
 CapsLock & s::return
 CapsLock & d::End
 
-; Vim arrow key shortcuts but starting at j
+; Right hand arrow key shortcuts
 CapsLock & j::Left
 CapsLock & k::Down
-CapsLock & l::Up
-CapsLock & `;::Right
+CapsLock & i::Up
+CapsLock & l::Right
