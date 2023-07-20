@@ -30,3 +30,7 @@ CapsLock & j::Left
 CapsLock & k::Down
 CapsLock & i::Up
 CapsLock & l::Right
+
+; Right hand ctrl + arrow key shortcuts
+CapsLock & n::^Left
+CapsLock & m::^Right
