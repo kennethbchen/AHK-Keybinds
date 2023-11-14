@@ -7,13 +7,21 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 ; ==== Desktop Switcher ====
 ; Uses user_config.ahk
 #Include %A_ScriptDir%\desktop_switcher.ahk
-Return
+
 
 
 ; ==== Other Keybinds ====
 
+SetCapsLockState, AlwaysOff
+
+; Convenient way to open FlowLauncher. FlowLauncher must have open keybind set to Ctrl + Space
+; This has to be here because we mess with CapsLock so it won't be detected with FL
+CapsLock & Space::
+^Space
+
 ; Only way to activate caps lock
-#CapsLock::CapsLock 
+#CapsLock::CapsLock
+SetCapsLockState, AlwaysOff
 
 ; Disable CapsLock toggle
 CapsLock::
@@ -32,5 +40,5 @@ CapsLock & i::Up
 CapsLock & l::Right
 
 ; Right hand ctrl + arrow key shortcuts
-CapsLock & n::^Left
-CapsLock & m::^Right
+CapsLock & <::^Left
+CapsLock & >::^Right
