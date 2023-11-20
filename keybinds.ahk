@@ -4,29 +4,22 @@
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability
 
+; ==== Disable CapsLock ====
+SetCapsLockState, AlwaysOff
+
 ; ==== Desktop Switcher ====
 ; Uses user_config.ahk
 #Include %A_ScriptDir%\desktop_switcher.ahk
 
-
-
 ; ==== Other Keybinds ====
 
-SetCapsLockState, AlwaysOff
+; Only way to toggle caps lock
+#CapsLock::CapsLock
 
 ; Convenient way to open FlowLauncher. FlowLauncher must have open keybind set to Ctrl + Space
 ; This has to be here because we mess with CapsLock so it won't be detected with FL
 CapsLock & Space::
 ^Space
-
-; Only way to activate caps lock
-#CapsLock::CapsLock
-SetCapsLockState, AlwaysOff
-
-; Disable CapsLock toggle
-CapsLock::
-CapsLock Up::
-SetCapsLockState, AlwaysOff
 
 ; Quick access to home and end
 CapsLock & a::Home
