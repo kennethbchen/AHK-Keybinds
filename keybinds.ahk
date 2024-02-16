@@ -35,3 +35,7 @@ CapsLock & l::Right
 ; Right hand ctrl + arrow key shortcuts
 CapsLock & <::^Left
 CapsLock & >::^Right
+
+; Select to beginning / end of line
+CapsLock & n::+Home
+CapsLock & m::+End
