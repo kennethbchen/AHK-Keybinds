@@ -23,7 +23,6 @@ CapsLock & Space::
 
 ; Quick access to home and end
 CapsLock & a::Home
-CapsLock & s::return
 CapsLock & d::End
 
 ; Right hand arrow key shortcuts
@@ -39,3 +38,9 @@ CapsLock & >::^Right
 ; Select to beginning / end of line
 CapsLock & n::+Home
 CapsLock & m::+End
+
+; Window location shortcuts (Windows key + arrow keys)
+CapsLock & s::#Up
+CapsLock & z::#Left
+CapsLock & x::#Down
+CapsLock & c::#Right
