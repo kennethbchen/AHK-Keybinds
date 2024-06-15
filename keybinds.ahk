@@ -18,8 +18,8 @@ SetCapsLockState, AlwaysOff
 
 ; Convenient way to open FlowLauncher. FlowLauncher must have open keybind set to Ctrl + Space
 ; This has to be here because we mess with CapsLock so it won't be detected with FL
-CapsLock & Space::
-^Space
+;CapsLock & Space::
+;^Space
 
 ; Quick access to home and end
 CapsLock & a::Home
@@ -44,3 +44,6 @@ CapsLock & s::#Up
 CapsLock & z::#Left
 CapsLock & x::#Down
 CapsLock & c::#Right
+
+; Delete key
+CapsLock & Backspace::Delete
